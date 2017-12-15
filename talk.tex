@@ -6,6 +6,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{fontspec}
+\newfontfamily\cjkfont{Noto Sans CJK SC} % Or any appropriate font you have
 \author{leviathan/talamon}
 \title{Breaking the microchip monopoly}
 \setbeamercovered{transparent} 
@@ -34,7 +36,7 @@
         \setlength\itemsep{1em}
 		\item Breaking the monopoly of big semiconductor manufacturers
 		\item Eliminating the vendor lock-in to big semiconductor manufacturers
-		\item Making semiconductor development super quick and inexpensive \\ (a few weeks and 50-100 USD per run)
+		\item Making semiconductor development super quick and inexpensive
 	\end{itemize}
 \end{frame}
 
@@ -79,8 +81,8 @@
 \section[Who]{}
 \begin{frame}{Community projects}
 	\begin{center}
-		\includegraphics[width=100pt]{Icarus.png}
-		\includegraphics[width=100pt]{Yosys.png}
+		\includegraphics[width=100pt]{Icarus.png} \\
+		\includegraphics[width=100pt]{Yosys.png} \\
 		\includegraphics[height=50pt]{Opencircuit.png}
 	\end{center}
 \end{frame}
@@ -94,8 +96,9 @@
 \begin{frame}{Companies and institutions}
 	\begin{center}
 		\includegraphics[width=100pt]{HKUST_Logo.png}
-		\includegraphics[width=100pt]{NFF.jpg}
-		\includegraphics[width=100pt]{efabless_logo.png}
+		\includegraphics[width=100pt]{NFF.jpg}  \\
+		\includegraphics[width=100pt]{efabless_logo.png} \\
+		\includegraphics[width=100pt]{Lanceville.png}
 	\end{center}
 \end{frame}
 
@@ -103,19 +106,56 @@
 \begin{frame}{How we do it}
 	\begin{itemize}
 		\item Introducing an open source chip manufacturing process standard specification
+		\item Introducing a fully integrated free EDA for ASIC design\footnotemark
+		\item Renting the clean room and manufacturing equipment at HKUST every 2 weeks for around 12 hours \\		
+		\begin{center}
+			\includegraphics[height=100pt]{cleanroom.png}
+			\includegraphics[height=100pt]{examples.png}
+		\end{center}
+	\end{itemize}
+
+	\footnotetext[1]{https://github.com/leviathanch/qtflow}
+\end{frame}
+
+\section[Why]{}
+\begin{frame}{Why are we doing this?}
+	\begin{itemize}
+		\item MPWs cost around 20'000 USD nowadays
+		\item MPWs take around 2-9 months nowadays
+		\item All manufacturers want NDAs (some NDAs even have NDAs!)
+		\item Your design for a vendor process contains process specific design quirks (also under NDA!)
+		\item No manufacturer provides the GDS2 files in order to manufacture the designs in your basement (there is \textbf{no} free silicon yet)
+		\item You can't even publish your own designs!
 	\end{itemize}
 \end{frame}
+
+\section[Conclusion]{}
 
 \begin{frame}{Help needed}
 	\begin{itemize}
-		\item Help with QtFlow\footnotemark
-		\item Help with the LibreSilicon process\footnotemark
+		\item Work on developing QtFlow\footnotemark
+		\item Work on the LibreSilicon process\footnotemark
+		\item Work on the standard logic cells
+		\item Work on developing FreeFLASH
+		\item Work on developing FreeDRAM
+		\item Financial contributions/Investments
 	\end{itemize}
-	
-	\footnotetext[1]{https://github.com/leviathanch/qtflow}
-	\footnotetext[2]{https://github.com/leviathanch/libresiliconprocess}
+
+	\footnotetext[2]{https://github.com/leviathanch/qtflow}
+	\footnotetext[3]{https://github.com/leviathanch/libresiliconprocess}
 \end{frame}
 
+\begin{frame}{Contact}
+	
+\end{frame}
 
+\begin{frame}{Thank you!}
+	\begin{center}
+		\textbf{Thank you very much!} \\
+		\textbf{Vielen herzlichen Dank!} \\
+		\textbf{\cjkfont 非常感谢你们!} \\
+		\includegraphics[width=100pt]{cat.png}
+	\end{center}
+\end{frame}
 
 \end{document}
