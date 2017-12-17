@@ -38,6 +38,19 @@
 		\item Eliminating the vendor lock-in to big semiconductor manufacturers
 		\item Making semiconductor development super quick and inexpensive
 		\item Introducing the LSPL (LibreSilicon public license)
+		\item Attracting commercial design houses to develop free silicon
+	\end{itemize}
+\end{frame}
+
+\section[Why]{}
+\begin{frame}{Why are we doing this?}
+	\begin{itemize}
+		\item MPWs cost around 20'000 USD nowadays
+		\item MPWs take around 2-9 months nowadays
+		\item All manufacturers want NDAs (some NDAs even have NDAs!)
+		\item Your design for a vendor process contains process specific design quirks (also under NDA!)
+		\item No manufacturer provides the GDS2 files in order to manufacture the designs in your basement (there is \textbf{no} free silicon yet)
+		\item You can't even publish your own designs!
 	\end{itemize}
 \end{frame}
 
@@ -59,12 +72,6 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{Libre Silicon EDA Tools}
-	\begin{itemize}
-        \item QtFlow
-	\end{itemize}    
-\end{frame}
-
 \begin{frame}{Companies and institutions}
 	\begin{center}
 		\includegraphics[width=100pt]{HKUST_Logo.png}
@@ -75,6 +82,15 @@
 \end{frame}
 
 \section[How]{}
+\begin{frame}{Reward IP developers}
+	\begin{itemize}
+        \setlength\itemsep{1em}
+		\item Chip designer is rewarded when IP is used on collaboration platforms
+		\item Smart contracts track usage and pay contributors
+		\item Hash of IP + desired return value
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{How we do it}
 	\begin{itemize}
 		\item Introducing an open source chip manufacturing process standard specification
@@ -89,41 +105,44 @@
 	\footnotetext[1]{https://github.com/leviathanch/qtflow}
 \end{frame}
 
-\begin{frame}{Reward IP developers}
+\begin{frame}{Libre Silicon EDA Tools}
 	\begin{itemize}
-        \setlength\itemsep{1em}
-		\item Chip designer is rewarded when IP is used on collaboration platforms
-		\item Smart contracts track usage and pay contributors
-		\item Hash of IP + desired return value
+	        \item QtFlow EDA\footnotemark
+	        \item Icarus Verilog simulation\footnotemark
+	        \item QRouter maze router\footnotemark
+	        \item GrayWolf floor planner\footnotemark
 	\end{itemize}
-\end{frame}
-
-\section[Why]{}
-\begin{frame}{Why are we doing this?}
-	\begin{itemize}
-		\item MPWs cost around 20'000 USD nowadays
-		\item MPWs take around 2-9 months nowadays
-		\item All manufacturers want NDAs (some NDAs even have NDAs!)
-		\item Your design for a vendor process contains process specific design quirks (also under NDA!)
-		\item No manufacturer provides the GDS2 files in order to manufacture the designs in your basement (there is \textbf{no} free silicon yet)
-		\item You can't even publish your own designs!
-	\end{itemize}
+	\footnotetext[2]{https://github.com/leviathanch/qtflow}
+	\footnotetext[3]{http://iverilog.icarus.com}
+	\footnotetext[4]{https://github.com/leviathanch/qrouter}
+	\footnotetext[5]{https://github.com/leviathanch/graywolf}
 \end{frame}
 
 \section[Conclusion]{}
 
 \begin{frame}{Help needed}
 	\begin{itemize}
-		\item Work on developing QtFlow\footnotemark
-		\item Work on the LibreSilicon process\footnotemark
-		\item Work on the standard logic cells
-		\item Work on developing FreeFLASH
-		\item Work on developing FreeDRAM
+		\item Work on developing QtFlow
+		\begin{itemize}
+			\item GrayWolf issues\footnotemark
+			\item QRouter issues\footnotemark
+			\item Front end issues\footnotemark
+		\end{itemize}
+		\item Work on the LibreSilicon process\footnotemark and technologies\footnotemark
+		\begin{itemize}
+			\item Work on the standard logic cells
+			\item Work on developing FreeFLASH
+			\item Work on developing FreeDRAM
+			\item Develop ADCs and stuff
+		\end{itemize}
 		\item Financial contributions/Investments
 	\end{itemize}
 
-	\footnotetext[2]{https://github.com/leviathanch/qtflow}
-	\footnotetext[3]{https://github.com/leviathanch/libresiliconprocess}
+	\footnotetext[6]{https://github.com/leviathanch/graywolf}
+	\footnotetext[7]{https://github.com/leviathanch/qrouter}
+	\footnotetext[8]{https://github.com/leviathanch/qtflow}
+	\footnotetext[9]{https://github.com/leviathanch/libresiliconprocess}
+	\footnotetext[10]{https://github.com/leviathanch/ls018}
 \end{frame}
 
 \begin{frame}{Contact}
